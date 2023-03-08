@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
+*{
+    box-sizing: border-box;
+
+}
 
 body{
     font-family: 'Comfortaa', cursive;
-    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
 form{
@@ -12,7 +17,7 @@ form{
     justify-content: space-between;
 
     border: 1px solid black;
-    width: 350px;
+    width: 370px;
     height:fit-content;
 
     border-radius: 5px;
@@ -20,7 +25,10 @@ form{
     padding: 30px;
 
     margin: auto;
+    margin-bottom: 40px;
     overflow: hidden;
+
+    background-color: white;
 }
 
 label{
@@ -33,6 +41,8 @@ input{
     border: none;
     border-bottom: 1px solid rgb(0, 0, 0);
 
+    transition: all 0.5s ease;
+
 }
 
 input:focus{
@@ -40,9 +50,16 @@ input:focus{
     border-bottom: 1px solid blue;
 }
 
+select:focus, textarea:focus{
+    outline: none;
+    border: 1px solid blue;
+
+}
+
 input::placeholder{
     color: cadetblue;
     font-size: 10px;
+    font-family: inherit;
 }
 
 div{
@@ -68,4 +85,98 @@ textarea{
 
 h1{
     text-align: center;
+}
+
+.btn{
+    text-transform: uppercase;
+    height: 35px;
+    margin-top: 15px;
+    border: none;
+
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+
+    background-color: transparent;
+
+    font-weight: bold;
+}
+
+.btn:hover{
+    cursor: pointer;
+
+    border: 1px solid rgb(29, 56, 209);
+    color: rgb(29, 56, 209);
+
+}
+
+.btn:active{
+    background-color: rgb(33, 20, 107);
+    color: aliceblue;
+}
+
+input[type="file"]{
+    border: none;
+}
+
+ul{
+    list-style-type: none;
+    list-style: none;
+}
+
+nav{
+    padding: 0px;
+    margin: 0px;
+}
+ ul{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 40px;
+
+    background-color: rgb(7, 7, 63);
+color: aliceblue;
+}
+
+
+
+li{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(42, 92, 126);
+    margin: 0px 20px;
+    border-radius: 5px;
+}
+
+li:first-child{
+    margin-right: auto;
+    width: 200px;
+    text-align: center;
+    padding-top: 14px;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: rgb(158, 212, 194);
+    color: rgb(9, 9, 68);
+}
+
+.material-symbols-outlined{
+    display: block;
+   font-size: 45px;
+text-align: center;
+}
+
+.span{
+    color: rgb(255, 0, 0);
+    font-size: 17px;
+}
+input:required{
+    content: "*";
 }
