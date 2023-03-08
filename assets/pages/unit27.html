@@ -8,30 +8,95 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="../css/unit27.css" />
 		<title>Document</title>
 	</head>
 	<body>
 		<form>
-			<select
-				name="userCity"
-				aria-placeholder="Select your sity">
-				<option value="Odessa">Odessa</option>
-				<option value="Kharkiv">Kharkiv</option>
-				<option value="Dnipro">Dnipro</option>
-				<option value="Kiyv">Kiyv</option>
-				<option value="Cherkasy">Cherkasy</option>
-			</select>
+			<h1>Login form</h1>
 
-			<input
-				type="text"
-				name="city"
-				list="sity-list" />
-			<datalist id="sity-list">
-				<option value="Kharkiv">Kharkiv</option>
-				<option value="Dnipro">Dnipro</option>
-				<option value="Kiyv">Kiyv</option>
-				<option value="Lviv">Lviv</option>
-			</datalist>
+			<div>
+				<label for="user-name">Please, input you name</label>
+				<input
+					type="text"
+					placeholder="Anna"
+					id="user-name" />
+			</div>
+
+			<div>
+				<label for="user-surname"> Please, input you surname</label>
+				<input
+					type="text"
+					placeholder="Smith"
+					id="user-surname" />
+			</div>
+
+			<div>
+				<label for="user-mail"> Enter you mail</label>
+				<input
+					type="email"
+					placeholder="name@xxx.com"
+					id="user-mail" />
+			</div>
+
+			<div>
+				<label for="user-brth">Choose your birthday</label>
+				<input
+					type="date"
+					id="user-brth" />
+			</div>
+
+			<div class="wrapper">
+				<label>Choose your gender:</label>
+				<fieldset>
+					<label for="women">Woman</label>
+					<input
+						name="gender"
+						type="radio"
+						value="woman"
+						id="woman" />
+					<label for="man">Man</label>
+					<input
+						name="gender"
+						type="radio"
+						value="man"
+						id="man" />
+				</fieldset>
+			</div>
+
+			<div>
+				<label for="img">Send your photo</label>
+				<input
+					type="file"
+					name=""
+					id="img" />
+			</div>
+
+			<div class="city-wrapper">
+				<label for="city">Choose your city</label>
+				<select
+					name=""
+					id="city">
+					<option value="Lviv">Lviv</option>
+					<option value="Odessa">Odessa</option>
+					<option value="Kherson">Kherson</option>
+					<option value="Vinnytsia">Vinnytsia</option>
+					<option value="Cherkasy">Cherkasy</option>
+					<option value="Dnipro">Dnipro</option>
+					<option value="Kiyv">Kiyv</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="msg">Tell us about youself:</label>
+				<textarea
+					name="message"
+					id="msg"
+					cols="30"
+					rows="5"></textarea>
+			</div>
 		</form>
 	</body>
 </html>
